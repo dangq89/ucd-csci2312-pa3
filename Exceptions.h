@@ -25,7 +25,6 @@ namespace Clustering {
     };
 
 
-
     class DimensionalityMismatchEx {
         unsigned int __current, __rhs;
         std::string __name;
@@ -39,8 +38,6 @@ namespace Clustering {
         friend std::ostream &operator<<(std::ostream &os, const DimensionalityMismatchEx &ex);
     };
 
-
-
     class ZeroClustersEx {
         std::string __name;
 
@@ -50,7 +47,6 @@ namespace Clustering {
 
         friend std::ostream &operator<<(std::ostream &os, const ZeroClustersEx &ex);
     };
-
 
 
     class DataFileOpenEx {

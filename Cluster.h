@@ -6,6 +6,7 @@
 #ifndef CLUSTERING_CLUSTER_H
 #define CLUSTERING_CLUSTER_H
 
+#include <assert.h>
 #include "Point.h"
 
 namespace Clustering {
@@ -29,9 +30,9 @@ namespace Clustering {
 
         static unsigned int __idGenerator;
 
-        void __del();
-        void __cpy(LNodePtr pts);
-        bool __in(const Point &p) const;
+         void __del();
+         void __cpy(LNodePtr pts);
+         bool __in(const Point &p) const;
 
         // inner class has private access
         class Centroid {
@@ -45,6 +46,7 @@ namespace Clustering {
 
             // no copy or assignment
             Centroid(const Centroid &cent) = delete;
+
             Centroid &operator[](const Centroid &cent) = delete;
 
             // getters/setters
@@ -67,7 +69,7 @@ namespace Clustering {
         Cluster(unsigned int d);
 
         // The big three: cpy ctor, overloaded operator=, dtor
-        Cluster(const Cluster &);
+        Cluster(const Cluster &cluster);
         Cluster &operator=(const Cluster &);
         ~Cluster();
 

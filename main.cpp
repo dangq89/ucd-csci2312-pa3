@@ -61,7 +61,7 @@ int main() {
     test_cluster_initselection(ec, NumIters);
     test_cluster_IO(ec, NumIters);
 
-    // kmeans tests
+     // kmeans tests
     test_kmeans_smoketest(ec);
     test_kmeans_run(ec, NumIters);
     test_kmeans_IO(ec, NumIters);

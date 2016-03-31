@@ -52,5 +52,4 @@ namespace Clustering {
 
 }
 
-
 #endif //CLUSTERING_KMEANS_H

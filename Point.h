@@ -13,7 +13,7 @@ namespace Clustering {
     class Point {
         unsigned int __id;
         unsigned int __dim;        // number of dimensions of the point
-        double *__values; // values of the point's dimensions
+        double *__values;          // values of the point's dimensions
 
         static unsigned int __idGen; // id generator
 
